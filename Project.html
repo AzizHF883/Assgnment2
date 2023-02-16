@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="Patient registration form"/>
+    <meta name="keywords" content="html, HTML"/>
+    <meta name="author" content="Md Aziz Hosen Foysal, Sazzad Hossain Zihad"/> 
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+    <!--body for the background-->
+    <div class="body">
+        <!--container for form starts-->
+        <div class="form_body">
+            <!--header starts-->
+            <header>
+                <div  class="heading">
+                    <h1>A&Z Hospital</h1>
+                    <h2>Savar, Dhaka, Bangladesh.</h2>
+                </div>
+            </header>
+            <hr>
+            <!--header ends-->
+            <!--main starts-->
+            <main>
+                <!--Form Starts-->
+                <form action="Print.php" method="post">
+                    <div  class="cap">
+                    <caption><b>Patient Registration Form</b></caption>
+                    </div>
+                    <br>
+                    <div>
+                         <label for="Name"><b>First name: </b></label><br>
+                         <input type="text" id="Name" name="Name" placeholder="Enter patient's full name"><br>
+                   </div><br> 
+                    
+                    <div>
+                        <label for="age"><b>Age: </b></label> <br>
+                        <input type="text" name="Age" id="age" placeholder="Enter patients age"  required>
+                    </div><br> 
+
+                    <div>
+                        <label for="Gender"><b>Gender: </b></label> <br><br>
+                        <input type="radio" name="Gender" id="Gender" value="Male">Male
+                        <input type="radio" name="Gender" id="Gender" value="Female">Female
+                        <input type="radio" name="Gender" id="Gender" value="Others">Others
+                    </div><br>
+
+                    <div>
+                        <label for="Email"><b>Email: </b></label> <br>
+                        <input type="email" name="Email" id="Email" placeholder="Enter patients email" required>
+                    </div><br>
+
+                    <div>
+                        <label for="Mobile"><b>Phone Number: </b></label> <br>
+                        <input type="text" name="Mobile" id="Mobile" placeholder="Enter phone number"  required>
+                    </div><br>  
+                 
+                    <div>
+                        <label for="Doc_name"><b>Doctors name:</b></label><br>
+                        <select name="Doc_name" required>
+                            <option selected hidden value="">Select doctor's name from the list</option>
+                            <option value="Dr. Mofiz">Dr. Mofiz(Medicine specialist)</option>
+                            <option value="Dr. Kuddus">Dr. Kuddus(Cardiologist)</option>
+                            <option value="Dr. Abul">Dr. Abul(Psychiatrist)</option>
+                            <option value="Dr. Sokhina">Dr. Sokhina(Orthopedist)</option>
+                            <option value="Dr. Jorina">Dr. Jorina(Gastroenterologist)</option>   
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="Appointment_date"><b>Appointment date: </b></label> <br>
+                        <input type="date" name="Appointment_date" id="Appointment_date" required>
+                    </div><br>
+                    <div>
+                        <label for="Description"><b>Describe your symptoms:</b></label><br>
+                        <textarea  name="Description" cols="25" rows="5" placeholder="Write your symptoms here."></textarea>
+                    </div><br>
+                    <div>
+                        <input type="checkbox"   id="terms" required>
+                        <label for="terms"><b>I've read and agree to the terms and conditions.</b></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Terms" id="news" value="Yes" >
+                        <label for="Terms"><b>Inform me about new offers and events.</b></label>
+                    </div><br>
+                    <div>
+                        <label for="submit"><b>If you want to submit your form click here.</b></label><br>
+                        <input type="submit" name="submit" value="Submit"></input>
+                    </div><br>
+                </form><hr>
+                <!--Form ends-->
+            </main>
+            <!--main ends-->
+            <!--footer starts-->
+            <footer class="foot">
+                <div class="h_contact">
+                    <p>
+                    <h3>Contact us:</h3>
+                        <a href="mailto:azizhf95@gmail.com">Email : azizhf95@gmail.com</a><br>
+                        <a href="tel">Phone : +8801830578610</a>
+                    </p>  
+                    <p>Copyright &copy; Md Aziz Hosen and Sazzad Hossain 2023</p>
+                </div>
+            </footer>
+            <!--footer ends-->
+        </div>
+        <!--container for form ends-->
+    </div>  
+</body>
+</html>
